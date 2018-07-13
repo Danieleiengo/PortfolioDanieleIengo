@@ -1,0 +1,293 @@
+<html>
+    
+</head>
+<body>
+
+ 
+
+<link rel="stylesheet" href='slideshow.css' type="text/css" />
+<script type="text/javascript" src="xfade2.js"></script>
+<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+       
+<script src="jquery.min.js"></script><script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+    
+    
+<style>
+  
+  #slideshow {
+top:5%;
+}
+body {background-color: c4c4c4;}
+
+#nome {font-family:Impact, Charcoal, sans-serif; text-align: right; font-size: 60px; color: #000; position:abslute; left:50%;
+}
+
+#cognome {font-family:Impact, Charcoal, sans-serif; text-align: left; font-size: 60px; color: #000; }
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+a {
+    color: black;
+}
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {color:black;
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+color:black;
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+#bio {position: absolute;
+top25%; left:20%;
+
+font-size: 20px;
+font-family:Impact, Charcoal, sans-serif;}
+
+#lavori {position: absolute;
+top25%; left:40%;
+font-size: 20px;
+font-family:Impact, Charcoal, sans-serif;
+}
+
+#coll {position: absolute;
+top25%; left:55%;
+font-size: 20px;
+font-family:Impact, Charcoal, sans-serif;}
+
+#contatti {position: absolute;
+top25%; left:73%;
+font-size: 20px;
+font-family:Impact, Charcoal, sans-serif;}
+
+.shake-slow {
+  display: inline-block;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-slow:hover,
+.shake-trigger:hover .shake-slow {
+  animation-play-state: running; }
+
+@keyframes shake-slow {
+  2% {
+    transform: translate(0px, -3px) rotate(3.5deg); }
+  4% {
+    transform: translate(-9px, -3px) rotate(0.5deg); }
+  6% {
+    transform: translate(-7px, 4px) rotate(-0.5deg); }
+  8% {
+    transform: translate(7px, 5px) rotate(2.5deg); }
+  10% {
+    transform: translate(-1px, -3px) rotate(-1.5deg); }
+  12% {
+    transform: translate(-3px, 8px) rotate(1.5deg); }
+  14% {
+    transform: translate(9px, -7px) rotate(2.5deg); }
+  16% {
+    transform: translate(1px, -9px) rotate(3.5deg); }
+  18% {
+    transform: translate(-4px, 7px) rotate(-1.5deg); }
+  20% {
+    transform: translate(6px, 3px) rotate(0.5deg); }
+  22% {
+    transform: translate(4px, -2px) rotate(-1.5deg); }
+  24% {
+    transform: translate(-7px, -8px) rotate(3.5deg); }
+  26% {
+    transform: translate(-5px, 9px) rotate(2.5deg); }
+  28% {
+    transform: translate(0px, -2px) rotate(-1.5deg); }
+  30% {
+    transform: translate(5px, 9px) rotate(1.5deg); }
+  32% {
+    transform: translate(6px, 2px) rotate(-1.5deg); }
+  34% {
+    transform: translate(-9px, 9px) rotate(2.5deg); }
+  36% {
+    transform: translate(-8px, 10px) rotate(3.5deg); }
+  38% {
+    transform: translate(2px, -4px) rotate(-2.5deg); }
+  40% {
+    transform: translate(2px, 7px) rotate(-2.5deg); }
+  42% {
+    transform: translate(2px, 4px) rotate(3.5deg); }
+  44% {
+    transform: translate(-8px, -3px) rotate(2.5deg); }
+  46% {
+    transform: translate(5px, -3px) rotate(1.5deg); }
+  48% {
+    transform: translate(9px, 4px) rotate(3.5deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1.5deg); }
+  52% {
+    transform: translate(-9px, 4px) rotate(-1.5deg); }
+  54% {
+    transform: translate(-1px, -6px) rotate(-2.5deg); }
+  56% {
+    transform: translate(4px, -6px) rotate(0.5deg); }
+  58% {
+    transform: translate(-8px, 2px) rotate(2.5deg); }
+  60% {
+    transform: translate(2px, 10px) rotate(3.5deg); }
+  62% {
+    transform: translate(5px, 5px) rotate(1.5deg); }
+  64% {
+    transform: translate(5px, 7px) rotate(-0.5deg); }
+  66% {
+    transform: translate(-6px, 9px) rotate(-0.5deg); }
+  68% {
+    transform: translate(4px, -2px) rotate(0.5deg); }
+  70% {
+    transform: translate(-5px, -3px) rotate(3.5deg); }
+  72% {
+    transform: translate(2px, 5px) rotate(-0.5deg); }
+  74% {
+    transform: translate(-9px, 4px) rotate(3.5deg); }
+  76% {
+    transform: translate(3px, -7px) rotate(1.5deg); }
+  78% {
+    transform: translate(0px, 4px) rotate(2.5deg); }
+  80% {
+    transform: translate(-1px, 4px) rotate(1.5deg); }
+  82% {
+    transform: translate(8px, 2px) rotate(1.5deg); }
+  84% {
+    transform: translate(7px, -6px) rotate(-0.5deg); }
+  86% {
+    transform: translate(3px, 0px) rotate(0.5deg); }
+  88% {
+    transform: translate(7px, -9px) rotate(-1.5deg); }
+  90% {
+    transform: translate(1px, 3px) rotate(0.5deg); }
+  92% {
+    transform: translate(10px, 3px) rotate(-0.5deg); }
+  94% {
+    transform: translate(4px, 1px) rotate(1.5deg); }
+  96% {
+    transform: translate(3px, 9px) rotate(2.5deg); }
+  98% {
+    transform: translate(4px, -7px) rotate(0.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-slow:hover,
+.shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
+  animation-name: shake-slow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+ 
+</style>
+
+    
+</head>
+
+ 
+
+
+<table width="1120" border="0" align="CENTER">      
+ <tr>
+    <td width="420" align="right"><h1 id="nome" class="intestazione sinistra" >DANIELE</h1></td>
+    <td width="280" align="center"><span><img src="Immagine-profilo-tondo.png" alt="immagine profilo" class="shake-slow" width="280" height="280" align="middle" longdesc="immagine profilo" /></span></td>
+    <td width="420" align="left"><h1 id="cognome" class="intestazione destra">IENGO</h1></td>
+  </tr>
+</table>
+
+<table width="1120";border="0" align="center">
+  
+<tr>
+<nav class="cl-effect-1">
+
+    <a href="#" data-hover="BIOGRAFIA" id="bio" class="biografia" width="280"align="center">BIOGRAFIA</a>
+<nav class="cl-effect-1">
+
+    <a href="#" data-hover="LAVORI" id="lavori" class="works" width="280"align="center">LAVORI</a>
+<nav class="cl-effect-1">
+
+    <a href="#" data-hover="COLLABORAZIONI" id="coll" class="collab" width="280"align="center">COLLABORAZIONI</a>
+<nav class="cl-effect-1">
+
+    <a href="#" data-hover="CONTATTI" id="contatti" class="contact" width="280"align="center">CONTATTI</a>
+</nav></nav></nav></nav>
+  </tr>
+
+</table>
+<p></p>
+
+
+
+<div id="slideshow">
+	<img
+		src="slide-insieme-1.jpg"
+		alt="slide-insieme-1"
+		title="slide-insieme-1"
+		onclick="parent.location='slide-insieme-1.jpg'"
+	/>
+	<img
+		src="slide-insieme-2.jpg"
+		alt="slide-insieme-2"
+		title="slide-insieme-2"
+		onclick="parent.location='slide-insieme-2.jpg'"
+	/>
+	<img
+		src="slide-insieme-3.jpg"
+		alt="slide-insieme-3"
+		title="slide-insieme-3"
+		onclick="parent.location='slide-insieme-3.jpg'"
+	/>
+</div>
+
+<script>
+ 
+$ git clone https://github.com/elrumordelaluz/csshake.git
+
+         
+</script>
+
+    
+</body>
+
+</html>
